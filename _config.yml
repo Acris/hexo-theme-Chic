@@ -86,7 +86,6 @@ time_format: H:mm:ss
 # stylesheets loaded in the <head>
 stylesheets:
   - /css/style.css
-  - https://cdn.jsdelivr.net/npm/disqusjs@1.2/dist/disqusjs.css
 
 # scripts loaded in the end of the body
 scripts:
@@ -94,7 +93,6 @@ scripts:
   - /js/tocbot.min.js
     # tscanlin/tocbot: Build a table of contents from headings in an HTML document.
     # https://github.com/tscanlin/tocbot
-  - https://cdn.jsdelivr.net/npm/disqusjs@1.2/dist/disqus.js
   - /js/comment.js
 
 

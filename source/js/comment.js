@@ -1,12 +1,13 @@
 function loadDisqus() {
-    new DisqusJS({
-        shortname: 'acris',
-        siteName: "Acris' Blog",
-        api: 'https://acris.me/api/',
-        apikey: '7z6fZZGYsRdgZJGM9sSDuvZm9g2IdnvOlLVfmT9QDUTh38jXsf9utltOWrQVnypV',
-        admin: 'acrisliu',
-        adminLabel: 'Mod'
-    });
+    // Disqus 安装代码
+    var d = document, s = d.createElement('script');
+    s.src = 'https://acris.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    window.disqus_config = function () {
+        this.page.url = document.location.origin + document.location.pathname + document.location.search;
+        this.page.identifier = document.location.origin + document.location.pathname + document.location.search;
+    };
 }
 
 // 通过检查 window 对象确认是否在浏览器中运行
