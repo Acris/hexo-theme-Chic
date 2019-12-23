@@ -51,7 +51,7 @@ links:
   Github: https://github.com/Acris
 
 # how links show: you have 2 choice--text or icon.
-links_text_enable: true
+links_text_enable: false
 links_icon_enable: true
 
 # Post page
