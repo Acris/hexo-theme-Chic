@@ -1,5 +1,4 @@
 function loadDisqus() {
-    // Disqus 安装代码
     var d = document, s = d.createElement('script');
     s.src = 'https://acris.disqus.com/embed.js';
     s.setAttribute('data-timestamp', +new Date());
@@ -32,10 +31,13 @@ setTimeout(function () {
             }
         }, { threshold: [0] });
         // 设置让 Observer 观察 #disqus_thread 元素
-        disqus_observer.observe(document.getElementById('disqus_thread'));
+        let element = document.getElementById('disqus_thread')
+        if (element) {
+            disqus_observer.observe(element);
+        }
     } else {
         // 当前环境是爬虫、或当前浏览器其不兼容 IntersectionObserver API
         // 直接加载 Disqus
         loadDisqus();
     }
-}, 100);
+}, 5);
