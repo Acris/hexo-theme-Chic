@@ -1,6 +1,6 @@
 function loadDisqus() {
     new DisqusJS({
-        shortname: 'mrx-blog',
+        shortname: 'acris',
         siteName: "Acris' Blog",
         api: 'https://acris.me/api/',
         apikey: '7z6fZZGYsRdgZJGM9sSDuvZm9g2IdnvOlLVfmT9QDUTh38jXsf9utltOWrQVnypV',
