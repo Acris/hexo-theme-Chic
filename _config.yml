@@ -1,22 +1,21 @@
 # Header
-navname: Bentham's Blog
+navname: Acris' Blog
 
 # navigatior items
 nav:
   Posts: /archives
   Categories: /category
   Tags: /tag
-  About: /about
 
 # favicon
 favicon: /favicon.ico
 
 # Profile
-nickname: Jeremy Bentham
+nickname: Acris Liu
 
 ### this variable is MarkDown form.
-description: Lorem ipsum dolor sit amet, **consectetur adipiscing elit.** <br>Fusce eget urna vitae velit *eleifend interdum at ac* nisi.
-avatar: /image/avatar.jpeg
+description: 花尽千霜默，世界苦人多。<br>愁醉非因酒，悲吟不是歌。
+avatar: https://cdn.reorz.com/images/2017/02/Lying.jpg
 
 # main menu navigation
 ## links key words should not be changed.
@@ -25,7 +24,7 @@ avatar: /image/avatar.jpeg
 links:
   Blog: /archives
 #  Category:
-#  Tags: 
+#  Tags:
 #  Link:
 #  Resume:
 #  Publish:
@@ -33,7 +32,7 @@ links:
 #  Gallary:
 #  RSS:
 #  AliPay:
-  ZhiHu: https://www.zhihu.com/people/sirice
+#  ZhiHu: https://www.zhihu.com/people/sirice
 #  LinkedIn:
 #  FaceBook:
 #  Twitter:
@@ -43,16 +42,16 @@ links:
 #  Sketch:
 #  Gitlab:
 #  Dribble:
-  Instagram:
-  Reddit:
+#  Instagram:
+#  Reddit:
 #  YouTube:
 #  QQ:
 #  Weibo:
 #  WeChat:
-  Github: https://github.com/Siricee
+  Github: https://github.com/Acris
 
 # how links show: you have 2 choice--text or icon.
-links_text_enable: false
+links_text_enable: true
 links_icon_enable: true
 
 # Post page
@@ -87,6 +86,7 @@ time_format: H:mm:ss
 # stylesheets loaded in the <head>
 stylesheets:
   - /css/style.css
+  - https://cdn.jsdelivr.net/npm/disqusjs@1.2/dist/disqusjs.css
 
 # scripts loaded in the end of the body
 scripts:
@@ -94,13 +94,15 @@ scripts:
   - /js/tocbot.min.js
     # tscanlin/tocbot: Build a table of contents from headings in an HTML document.
     # https://github.com/tscanlin/tocbot
+  - https://cdn.jsdelivr.net/npm/disqusjs@1.2/dist/disqus.js
+  - /js/comment.js
 
 
 # plugin functions
 ## Mathjax: Math Formula Support
 ## https://www.mathjax.org
 mathjax:
-  enable: true
+  enable: false
   import: demand # global or demand
   ## global: all pages will load mathjax,this will degrade performance and some grammers may be parsed wrong.
   ## demand: Recommend option,if your post need fomula, you can declare 'mathjax: true' in Front-matter
