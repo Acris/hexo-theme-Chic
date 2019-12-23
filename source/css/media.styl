@@ -1,25 +1,25 @@
 /* mobile phone and smart portable devices */
-@media screen and (max-width: 479px) 
+@media screen and (max-width: 479px)
   .main
     padding-top 40pt
   .navbar
     display: none
 
 
-  .navbar-mobile 
+  .navbar-mobile
     display: block !important
     position: fixed
     width: 100%
     z-index: 100
     transition: all 0.6s ease 0s
-    .container 
+    .container
       padding: 0
       margin: 0
       //height: 5em
       line-height: 5.5em
       background: $light-background-color
 
-      .navbar-header 
+      .navbar-header
         display: flex
         justify-content: space-between
         align-items: center
@@ -30,12 +30,12 @@
         position relative
 
 
-        .menu-toggle 
+        .menu-toggle
           cursor: pointer
           line-height: 5.5em
           padding auto 2em
 
-          span 
+          span
             display: block
             background: #000
             width: 36px
@@ -47,46 +47,46 @@
             -moz-transition: .25s margin .25s, .25s transform
             transition: .25s margin .25s, .25s transform
 
-            .dark-theme & 
+            .dark-theme &
               background: $dark-font-color
-            
-          
 
-          span:nth-child(1) 
+
+
+          span:nth-child(1)
             margin-bottom: 8px
-          
-          span:nth-child(3) 
-            margin-top: 8px
-          
 
-          &.active 
-            span 
+          span:nth-child(3)
+            margin-top: 8px
+
+
+          &.active
+            span
               -webkit-transition: .25s margin, .25s transform .25s
               -moz-transition: .25s margin, .25s transform .25s
               transition: .25s margin, .25s transform .25s
-            
-            span:nth-child(1) 
+
+            span:nth-child(1)
               -moz-transform: rotate(45deg) translate(4px, 6px)
               -ms-transform: rotate(45deg) translate(4px, 6px)
               -webkit-transform: rotate(45deg) translate(4px, 6px)
               transform: rotate(45deg) translate(4px, 6px)
-            
 
-            span:nth-child(2) 
+
+            span:nth-child(2)
               opacity: 0
-            
 
-            span:nth-child(3) 
+
+            span:nth-child(3)
               -moz-transform: rotate(-45deg) translate(8px, -10px)
               -ms-transform: rotate(-45deg) translate(8px, -10px)
               -webkit-transform: rotate(-45deg) translate(8px, -10px)
               transform: rotate(-45deg) translate(8px, -10px)
-            
-          
-        
-      
 
-      .menu 
+
+
+
+
+      .menu
         text-align: center
         background: #ffffff
         border-top: 1px solid #000000
@@ -94,7 +94,7 @@
         padding-bottom: 1em
         display: none
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1), 0px 4px 8px rgba(0, 0, 0, 0.1)
-        a 
+        a
           //display: block
 
           //changed
@@ -102,25 +102,25 @@
           margin 0 1em
 
           line-height: 2.5em
-        
 
-        &.active 
+
+        &.active
           display: block
           //changed
           white-space nowrap
           box-sizing border-box
           overflow-x auto
 
-        .dark-theme & 
+        .dark-theme &
           background: $dark-background-color
           border-top: 2px solid $dark-font-secondary-color
-        
-      
-      .dark-theme & 
+
+
+      .dark-theme &
         background: $dark-background-color !important
-      
-    
-  
+
+
+
 
   .archive
     width 90%
@@ -129,14 +129,12 @@
         display none
 
 
-  #dynamic-to-top 
+  #dynamic-to-top
     display: none !important
-  
-  .footer 
-    height: 3rem
+
+  .footer
     width: 100%
     text-align: center
-    line-height: 1.5rem
     padding-top: 2em
 
   .post-warp
