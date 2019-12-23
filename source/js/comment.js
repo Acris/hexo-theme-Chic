@@ -37,4 +37,4 @@ setTimeout(function () {
         // 直接加载 Disqus
         loadDisqus();
     }
-}, 1000);
+}, 100);
