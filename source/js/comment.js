@@ -44,4 +44,3 @@ function initDisqus() {
     }, 5);
 }
 
-$(document).ready(initDisqus());
