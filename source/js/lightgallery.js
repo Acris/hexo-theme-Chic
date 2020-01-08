@@ -4,9 +4,10 @@ function initLightGallery() {
         let imageWrapLink = document.createElement('a');
         imageWrapLink.setAttribute("href", imageSrc);
         image.parentNode.insertBefore(imageWrapLink, image);
+        imageWrapLink.appendChild(image);
         let imageTitle = image.getAttribute('title') || image.getAttribute('alt');
         if (imageTitle) {
-            imageWrapLink.setAttribute('title', imageTitle);
+            imageWrapLink.setAttribute('data-sub-html', '<h4>' + imageTitle + '</h4>');
         }
     });
 
