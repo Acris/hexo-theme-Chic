@@ -2,6 +2,7 @@ function initLightGallery() {
     document.querySelectorAll('.post-content :not(a) > img').forEach(image => {
         let imageSrc = image.getAttribute('src');
         let imageWrapLink = document.createElement('a');
+        imageWrapLink.classList.add("light-gallery")
         imageWrapLink.setAttribute("href", imageSrc);
         imageWrapLink.setAttribute("data-src", imageSrc);
         image.parentNode.insertBefore(imageWrapLink, image);
@@ -12,7 +13,9 @@ function initLightGallery() {
         }
     });
 
-    lightGallery(document.getElementsByClassName('post-content')[0]);
+    lightGallery(document.getElementsByClassName('post-content')[0], {
+        selector: '.light-gallery'
+    });
 }
 
 window.addEventListener('DOMContentLoaded', (event) => {
