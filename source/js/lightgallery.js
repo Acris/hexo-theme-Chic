@@ -1,4 +1,4 @@
-(function() {
+function initLightGallery() {
     document.querySelectorAll('.post-content :not(a) > img').forEach(image => {
         let imageSrc = image.getAttribute('src');
         let imageWrapLink = document.createElement('a');
@@ -11,5 +11,10 @@
             imageWrapLink.setAttribute('data-sub-html', '<h4>' + imageTitle + '</h4>');
         }
     });
+
     lightGallery(document.getElementsByClassName('post-content')[0]);
-})();
+}
+
+window.addEventListener('DOMContentLoaded', (event) => {
+    initLightGallery();
+});
