@@ -11,5 +11,5 @@ function initLightGallery() {
         }
     });
 
-    lightGallery(document.getElementsByClassName('post-content'));
+    lightGallery(document.getElementsByClassName('post-content')[0]);
 }
