@@ -14,7 +14,8 @@ function initLightGallery() {
     });
 
     lightGallery(document.getElementsByClassName('post-content')[0], {
-        selector: '.light-gallery'
+        selector: '.light-gallery',
+        download: false
     });
 }
 
