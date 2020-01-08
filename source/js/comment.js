@@ -9,8 +9,6 @@ function loadDisqus() {
     };
 }
 
-
-
 (function() {
     // 通过检查 window 对象确认是否在浏览器中运行
     var runningOnBrowser = typeof window !== "undefined";
