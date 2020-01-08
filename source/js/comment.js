@@ -9,7 +9,9 @@ function loadDisqus() {
     };
 }
 
-function initDisqus() {
+
+
+(function() {
     // 通过检查 window 对象确认是否在浏览器中运行
     var runningOnBrowser = typeof window !== "undefined";
     // 通过检查 scroll 事件 API 和 User-Agent 来匹配爬虫
@@ -42,6 +44,4 @@ function initDisqus() {
             loadDisqus();
         }
     }, 5);
-}
-
-initDisqus();
+})();
