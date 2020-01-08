@@ -86,6 +86,7 @@ time_format: H:mm:ss
 # stylesheets loaded in the <head>
 stylesheets:
   - /css/style.css
+  - https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css
 
 # scripts loaded in the end of the body
 scripts:
@@ -94,7 +95,8 @@ scripts:
     # tscanlin/tocbot: Build a table of contents from headings in an HTML document.
     # https://github.com/tscanlin/tocbot
   - /js/comment.js
-
+  - https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js
+  - /js/fancybox.js
 
 # plugin functions
 ## Mathjax: Math Formula Support
