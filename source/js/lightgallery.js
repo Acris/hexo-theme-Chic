@@ -3,6 +3,7 @@ function initLightGallery() {
         let imageSrc = image.getAttribute('src');
         let imageWrapLink = document.createElement('a');
         imageWrapLink.setAttribute("href", imageSrc);
+        imageWrapLink.setAttribute("data-src", imageSrc);
         image.parentNode.insertBefore(imageWrapLink, image);
         imageWrapLink.appendChild(image);
         let imageTitle = image.getAttribute('title') || image.getAttribute('alt');
@@ -13,3 +14,5 @@ function initLightGallery() {
 
     lightGallery(document.getElementsByClassName('post-content')[0]);
 }
+
+initLightGallery();

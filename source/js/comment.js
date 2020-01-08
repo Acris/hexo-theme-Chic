@@ -44,3 +44,4 @@ function initDisqus() {
     }, 5);
 }
 
+initDisqus();

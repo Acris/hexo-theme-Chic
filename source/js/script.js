@@ -83,7 +83,6 @@ document.ready(
         _Blog.toggleTheme();
 
         // ready function.
-        initLightGallery();
-        initDisqus();
+
     }
 );
