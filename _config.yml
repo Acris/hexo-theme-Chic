@@ -11,7 +11,7 @@ nav:
 favicon: https://cdn.reorz.com/favicon.ico
 
 # Profile
-nickname: Acris Liu
+nickname: Acris
 
 ### this variable is MarkDown form.
 description: 花尽千霜默，世界苦人多。<br>愁醉非因酒，悲吟不是歌。
@@ -23,31 +23,31 @@ avatar: https://cdn.reorz.com/images/2017/02/Lying.jpg
 ## Unused key can be commented out.
 links:
   Blog: /archives
-#  Category:
-#  Tags:
-#  Link:
-#  Resume:
-#  Publish:
-#  Trophy:
-#  Gallary:
-#  RSS:
-#  AliPay:
-#  ZhiHu: https://www.zhihu.com/people/sirice
-#  LinkedIn:
-#  FaceBook:
-#  Twitter:
-#  Skype:
-#  CodeSandBox:
-#  CodePen:
-#  Sketch:
-#  Gitlab:
-#  Dribble:
-#  Instagram:
-#  Reddit:
-#  YouTube:
-#  QQ:
-#  Weibo:
-#  WeChat:
+  # Category:
+  # Tags:
+  # Link:
+  # Resume:
+  # Publish:
+  # Trophy:
+  # Gallery:
+  # RSS:
+  # AliPay:
+  # ZhiHu: https://www.zhihu.com/people/sirice
+  # LinkedIn:
+  # FaceBook:
+  # Twitter:
+  # Skype:
+  # CodeSandBox:
+  # CodePen:
+  # Sketch:
+  # Gitlab:
+  # Dribbble:
+  # Instagram:
+  # Reddit:
+  # YouTube:
+  # QQ:
+  # Weibo:
+  # WeChat:
   Github: https://github.com/Acris
 
 # how links show: you have 2 choice--text or icon.
