@@ -11,7 +11,7 @@
         (() => {
             const pagebody = document.getElementsByTagName('body')[0]
 
-            function setTheme(status) {
+            function setTheme(status = 'dark') {
 
                 if (status === 'dark') {
                     window.sessionStorage.theme = 'dark'
