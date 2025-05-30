@@ -1,0 +1,16 @@
+name: Build blog trigger
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Invoke build blog workflow
+        uses: benc-uk/workflow-dispatch@v1
+        with:
+          workflow: Build blog
+          repo: Acris/blog
+          ref: main
+          token: ${{ secrets.ACCESS_token }}
