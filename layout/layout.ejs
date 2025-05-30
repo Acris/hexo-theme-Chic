@@ -6,34 +6,47 @@
 </head>
 
 <body>
-    <script>
-        // this function is used to check current theme before page loaded.
-        (() => {
-            const pagebody = document.getElementsByTagName('body')[0]
-
-            function setTheme(status) {
-
-                if (status === 'dark') {
-                    window.sessionStorage.theme = 'dark'
-                    pagebody.classList.add('dark-theme');
-
-                } else if (status === 'light') {
-                    window.sessionStorage.theme = 'light'
-                    pagebody.classList.remove('dark-theme');
-                }
-            };
-
-            setTheme(window.sessionStorage.theme)
-        })();
-    </script>
-
     <div class="wrapper">
         <%- partial('_partial/header',{cache: true}) %>
             <div class="main">
                 <%- body %>
             </div>
-            <%- partial('_partial/footer',{cache: true}) %>
+        <%- partial('_partial/footer',{cache: true}) %>
     </div>
+
+    <script data-cfasync="false">
+        function setTheme(status = 'dark') {
+            const pageBody = document.getElementsByTagName('body')[0]
+            if (status === 'dark') {
+                window.localStorage.theme = 'dark'
+                pageBody.classList.add('dark-theme');
+                document.getElementById("switch_default").checked = true
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                window.localStorage.theme = 'light'
+                pageBody.classList.remove('dark-theme');
+                document.getElementById("switch_default").checked = false
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        }
+
+        function toggleTheme() {
+            setTheme(window.localStorage.theme)
+
+            document.getElementsByClassName('toggleBtn')[0].addEventListener('click', () => {
+                window.localStorage.theme = window.localStorage.theme === 'dark' ? 'light' : 'dark'
+                setTheme(window.localStorage.theme)
+                document.getElementById("switch_default").checked = window.localStorage.theme === 'light'
+            })
+            document.getElementById('mobile-toggle-theme').addEventListener('click', () => {
+                window.localStorage.theme = window.localStorage.theme === 'dark' ? 'light' : 'dark'
+                setTheme(window.localStorage.theme)
+                document.getElementById("mobile-toggle-theme").innerText = window.localStorage.theme === 'light' ? "· Light" : "· Dark"
+            })
+        }
+
+        toggleTheme()
+    </script>
 </body>
 
 </html>
